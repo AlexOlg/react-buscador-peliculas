@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 export function ListOfMovies ({ movies }) {
     return (
       <ul className="movies">

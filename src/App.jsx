@@ -12,9 +12,8 @@ function App() {
   const {movies, getMovies, loading} = useMovies({search})
 
   const debouncedGetMovies = useCallback(debounce(search => {
-    console.log('Search', search)
     getMovies({search})
-  }, 3000), []) 
+  }, 2000), []) 
   const handleSubmit = (event) => {
     event.preventDefault()
     getMovies({search})
